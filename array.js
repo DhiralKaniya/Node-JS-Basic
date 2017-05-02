@@ -7,5 +7,5 @@ arr.push(17);
 var value = 1;
 arr.forEach(function(item) {
     if(item==value)
-        console.log('founded' + item);
+        console.log('Your value has been founded' + item);
 });
