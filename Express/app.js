@@ -14,6 +14,12 @@ var port = process.env.PORT || 3000;
 app.get('/',function(request,response){
     response.send('<html><body><h2>Hello World</h2></body></html>');
 });
+app.get('/:tblname/',function(request,response){
+    console.log(request.params.tblname);
+    console.log(request.query.column);
+    console.log(request.query.type);
+    response.send(200);
+}); 
 app.get('/person/:type/:val1',function(request,response){
     var type = request.params.type;
     var username = request.params.val1;
