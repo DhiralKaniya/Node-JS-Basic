@@ -2,14 +2,14 @@ var express = require('express');
 var app = express();
 var mysql = require('mysql');
 var connection = mysql.createConnection({
-    host : 'localhost',
-    user : 'root',
-    password : '',
-    database : 'testing'
+    host : 'mysql.hostinger.in',
+    user : 'u749094136_abcd',
+    password : 'funny143',
+    database : 'u749094136_abcd'
 });
 connection.connect();
 
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 8080;
 
 app.get('/',function(request,response){
     response.send('<html><body><h2>Hello World</h2></body></html>');
